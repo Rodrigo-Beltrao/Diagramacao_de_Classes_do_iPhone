@@ -1,0 +1,35 @@
+// Interface para o Reprodutor Musical
+public interface ReprodutorMusical {
+    void play();
+}
+
+// Interface para o Aparelho Telefônico
+public interface AparelhoTelefonico {
+    void call();
+}
+
+// Interface para o Navegador na Internet
+public interface NavegadorInternet {
+    void browse();
+}
+
+// Classe iPhone que implementa todas as interfaces
+public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+    @Override
+    public void play() {
+        // Implementação para tocar música
+    }
+
+    @Override
+    public void call() {
+        // Implementação para fazer uma chamada telefônica
+    }
+
+    @Override
+    public void browse() {
+        // Implementação para navegar na internet
+    }
+
+    // Outros métodos e propriedades específicos do iPhone
+}
+
